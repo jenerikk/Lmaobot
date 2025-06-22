@@ -27,7 +27,7 @@ jobs:
       run: geode build
 
     - name: Upload .geode file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: lmaobot
         path: build/*.geode
