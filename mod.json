@@ -1,0 +1,10 @@
+{
+  "id": "lmaobot",
+  "name": "lmaobot",
+  "description": "Lmaobot is cool and lightweight idek what to put here 🙃",
+  "developer": "powahkat",
+  "version": "1.0.0",
+  "geode": ">=0.3.0",
+  "gameVersion": "2.207",
+  "entry": "src/main.cpp"
+}
