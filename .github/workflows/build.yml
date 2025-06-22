@@ -20,8 +20,11 @@ jobs:
         profile: minimal
         override: true
 
-    - name: Install Geode CLI (stable commit)
-      run: cargo install --git https://github.com/geode-sdk/cli --rev 0a3fb60
+    - name: Install Geode CLI (v0.3.0)
+      run: cargo install --git https://github.com/geode-sdk/cli --tag v0.3.0 --locked
+
+    - name: Add Cargo bin to PATH
+      run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
     - name: Build mod
       run: geode build
