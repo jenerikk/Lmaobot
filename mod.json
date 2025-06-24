@@ -4,7 +4,7 @@
   "description": "Lmaobot is cool and lightweight idek what to put here 🙃",
   "developer": "powahkat",
   "version": "1.0.0",
-  "geode": ">=1.0.0",
-  "gameVersion": "2.2.0.7",
+  "geode": "0.3.6",
+  "gameVersion": "2.207",
   "entry": "src/main.cpp"
 }
