@@ -1,5 +1,4 @@
-name: Build Geode Mod
-
+name: Build Lmaobot Mod
 on:
   workflow_dispatch:
   push:
@@ -14,18 +13,14 @@ jobs:
         config:
         - name: Windows
           os: windows-latest
-
         - name: macOS
           os: macos-latest
-
         - name: iOS
           os: macos-latest
           target: iOS
-
         - name: Android32
           os: ubuntu-latest
           target: Android32
-
         - name: Android64
           os: ubuntu-latest
           target: Android64
@@ -39,13 +34,14 @@ jobs:
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
-          combine: true
           target: ${{ matrix.config.target }}
+          geode-version: v3.7.0
+          combine: true
 
   package:
     name: Package builds
     runs-on: ubuntu-latest
-    needs: ['build']
+    needs: build
 
     steps:
       - uses: geode-sdk/build-geode-mod/combine@main
