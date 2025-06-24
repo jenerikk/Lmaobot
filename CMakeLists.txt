@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 1.0.1)
+cmake_minimum_required(VERSION 0.3.6)
 project(lmaobot)
 
 find_package(Geode REQUIRED)
