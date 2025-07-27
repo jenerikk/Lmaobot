@@ -5,6 +5,5 @@
   "developer": "powahkat",
   "version": "1.0.0",
   "geode": "0.3.6",
-  "gameVersion": "2.207",
   "entry": "src/main.cpp"
 }
